@@ -57,6 +57,7 @@ def main():
         print(f"\tPredition: {prediction[0]:.2f},\tActual: {true_values[i]}")
     print(f"Feature coefficient: {model.coef_}")
     print(f"Mean Squared Error: {mse}")
+    print(f"Root Mean Squared Error: {np.sqrt(mse)}")
 
     # Create a plot
     plt.scatter(model_feature[test], true_values)
